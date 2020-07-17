@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="contact/CSS/style.css">
     <link rel="stylesheet" href="general/navstyle.css">
+    <link rel="stylesheet" href="general/aos.css">
     <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
     <style>
@@ -15,25 +16,37 @@
     
 </head>
 <body>
+   <div class="open-box sub-open"></div>
+<div class="open-box sub-open-pr"></div>
+
+<div class="sub-ani">
+       <div class="box-eff left-box"></div>
+       <div class="box-eff right-box"></div>
+</div>
+       <div class="wipe-box left-box-wipe"></div>
+       <div class="wipe-box left-box-wipe-pr"></div>
+       <div class="wipe-box right-box-wipe"></div>
+       <div class="wipe-box right-box-wipe-pr"></div>
     <div class="cursor-base">
         <div class="cursor-eff1"></div>
         <div class="cursor-text"></div>
+        <div class="cursor-text-left"></div>
         <div class="cursor-eff2"></div>
     </div>
  <div class="ham-list row">
      <div class="ham-list-wrap col-xs-4 col-sm-6 col-md-8">
          <ol>
-           			<li id="cover">
-				<a href="https://size250mm.github.io/COVER/.">cover</a>
+           	<li class="next-cover">
+				cover
 			</li>
-			<li id="about">
-				<a href="https://size250mm.github.io/ABOUT/.">about</a>
+			<li class="next-about">
+				about
 			</li>
-			<li id="works">
-				<a href="https://size250mm.github.io/WORKS/.">portfolio</a>
+			<li class="next-works">
+				portfolio
 			</li>
-			<li id="contact">
-				<a href="https://size250mm.github.io/CONTACT/.">contact</a>
+			<li class="next-contact">
+				contact
 			</li>
          </ol>
      </div>
@@ -65,20 +78,24 @@
            <div class="nav-logo"></div>
        </div>
    </nav>
+       <nav class="page-btn">
+        <div class="page-btn1 next-works"><button>- WORKS</button></div>
+        <div class="page-btn2 next-cover"><button>COVER -</button></div>
+    </nav>
     <section class="contact row">
         <div class="main col-xs-12 col-sm-12 col-md-12">
             <div class="text-group">
-                <p>contact</p>
-                <p>email</p>
-                <p>kakao</p>
-                <p>number</p>
+                <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">contact</p>
+                <p data-aos="fade-left" data-aos-duration="2000" data-aos-delay="200">email</p>
+                <p data-aos="fade-left" data-aos-duration="2000" data-aos-delay="400">kakao</p>
+                <p data-aos="fade-left" data-aos-duration="2000" data-aos-delay="600">number</p>
             </div>
         </div>
         <div class="contact-info row">
             <div class="text-group col-xs-12 col-sm-12 col-md-12">
-                <div><p><mark>email:</mark></p><p class="hide-text">size210mm@naver.com</p></div>
-                <div><p><mark>kakao:</mark></p><p class="hide-text">size250mm</p></div>
-                <div><p><mark>number:</mark></p><p class="hide-text">010-6670-4522</p></div>
+                <div><p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">email:</p><p class="hide-text" data-aos="fade-left" data-aos-duration="2000" data-aos-delay="200">size210mm@naver.com</p></div>
+                <div><p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">kakao:</p><p class="hide-text" data-aos="fade-left" data-aos-duration="2000" data-aos-delay="400">size250mm</p></div>
+                <div><p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">number:</p><p class="hide-text" data-aos="fade-left" data-aos-duration="2000" data-aos-delay="600">010-6670-4522</p></div>
             </div>
         </div>
     </section>
@@ -88,3 +105,7 @@
 <script src="portfolio/SCRIPT/script.js"></script>
 <script src="general/nav-script.js"></script>
 <script src="general/mouse-script.js"></script>
+<script src="general/aos.js"></script>
+<script>
+AOS.init();
+</script>
